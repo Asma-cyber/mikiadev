@@ -1,0 +1,163 @@
+body {
+    background-color: #071722;
+    background-image: radial-gradient(circle at top, rgba(0, 250, 253, 0.2) 0%, #071722 40%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: #FFF;
+    height: 1024;
+}
+
+.navbar-brand {
+    font-family: 'Alone';
+    font-size: 400
+}
+
+.px-lg-5 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important
+}
+
+.navbar {
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    color: #fff;
+}
+
+a {
+    color: #FFF;
+}
+
+nav {
+    color: #fff
+}
+
+.tab-bar {
+    display: row;
+}
+
+.container {
+    vertical-align: middle;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.tab-menu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-top: 6px double #6B8699;
+    border-left: 3px solid #6B8699;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.tab-link.active {
+    font-weight: bold;
+    border-bottom: 4px solid #065B99;
+}
+
+.tab-content {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.titre {
+    font-family: 'Century Gothic';
+    color: #E2A700;
+    font-weight: 700;
+}
+
+.menus {
+    text-align: center;
+    color: FFFFFF;
+    font-family: 'Century Gothic';
+}
+
+.hero-header {
+    background: url(../img/left.png), url(../img/blob-bottom-right.png);
+    background-position: left -30px top 0px, right 0px bottom 0px;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991.98px) {
+    .hero-header {
+        padding: 6rem 0 9rem 0;
+    }
+}
+
+.photo-cost {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.avi {
+    background-color: #122C3D;
+    margin-top: 125px;
+}
+
+.photo {
+    position: relative;
+    top: -75px;
+    left: 0px;
+}
+
+.avi-body {
+    position: relative;
+    top: -100px;
+}
+
+.name-cost {
+    position: relative;
+    left: 200px;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+.avis-cost {
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    position: relative;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background-color: #122C3D;
+    border: none;
+    appearance: none;
+    border-radius: 0px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding-bottom: 20px;
+}

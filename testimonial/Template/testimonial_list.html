@@ -1,0 +1,65 @@
+
+{% block content %}
+  <div class="container">
+    <div class="row l-content-center">
+      <div class="col-lg-8 col-md-10">
+        <h1 class="text-center mb-5">Testimonials</h1>
+        <div class="testimonials">
+          {% for testimonial in testimonials %}
+            <div class="testimonial">
+              <p class="message">{{ testimonial.message }}</p>
+              <p class="occupation">{{ testimonial.occupation }}</p>
+            </div>
+          {% empty %}
+            <p>No testimonials yet.</p>
+          {% endfor %}
+        </div>
+        <hr>
+        <h2 class="text-center my-5">Add a testimonial</h2>
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button class="btn btn-primary mt-3" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block styles %}
+  <style>
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .testimonial {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    .message {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .occupation {
+      font-style: italic;
+      color: #888;
+    }
+    h1, h2, p {
+      text-align: center;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+{% endblock %}
